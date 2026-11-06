@@ -1,0 +1,3 @@
+VCD info: dumpfile project_evidence/fpga/W1/sim/tb_spi_read_block.vcd opened for output.
+PASS SPI_READ_BLOCK: Mode0 commands, A5/5A, 512 samples, CRC, abort/retry
+<REPO_ROOT>\FPGA\sim\tb_spi_read_block.sv:131: $finish called at 12734811000 (1ps)

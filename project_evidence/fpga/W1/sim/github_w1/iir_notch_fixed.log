@@ -1,0 +1,7 @@
+VCD info: dumpfile project_evidence/fpga/W1/sim/tb_iir_notch_fixed.vcd opened for output.
+METRIC kind=0 in500=39.798794 out500=36.040817 db500=-0.862 in1000=0.000000 out1000=0.000000 db1000=0.000
+METRIC kind=3 in500=34.774371 out500=33.473357 db500=-0.331 in1000=0.000000 out1000=0.000000 db1000=0.000
+METRIC kind=1 in500=0.000000 out500=0.000000 db500=0.000 in1000=39.861392 out1000=0.000000 db1000=-332.908
+METRIC kind=2 in500=35.105350 out500=34.266899 db500=-0.210 in1000=34.892729 out1000=1.509702 db1000=-27.277
+PASS IIR_NOTCH_FIXED: quantized-input spectrum; A40/A35/mixed 500Hz <=1dB; 1kHz >=10dB
+<REPO_ROOT>\FPGA\sim\tb_iir_notch_fixed.sv:96: $finish called at 328000000 (1ps)

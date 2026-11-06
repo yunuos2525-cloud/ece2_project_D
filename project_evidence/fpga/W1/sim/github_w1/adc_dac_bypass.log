@@ -1,0 +1,3 @@
+VCD info: dumpfile project_evidence/fpga/W1/sim/tb_adc_dac_bypass.vcd opened for output.
+PASS ADC_DAC_BYPASS: modeled AD7908 replies preserved through DAC writes
+<REPO_ROOT>\FPGA\sim\tb_adc_dac_bypass.sv:53: $finish called at 266270000 (1ps)

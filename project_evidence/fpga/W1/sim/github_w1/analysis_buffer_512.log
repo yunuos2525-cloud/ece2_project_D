@@ -1,0 +1,3 @@
+VCD info: dumpfile project_evidence/fpga/W1/sim/tb_analysis_buffer_512.vcd opened for output.
+PASS ANALYSIS_BUFFER_512: ordering, immutability, overflow and consume
+<REPO_ROOT>\FPGA\sim\tb_analysis_buffer_512.sv:54: $finish called at 21191000 (1ps)

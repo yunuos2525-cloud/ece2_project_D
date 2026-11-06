@@ -1,0 +1,3 @@
+VCD info: dumpfile project_evidence/fpga/W1/sim/tb_reset_recovery.vcd opened for output.
+PASS RESET_RECOVERY: async assert, 3-edge release, sample/SPI interruption, clean BYPASS/notch/buffer/SPI restart
+<REPO_ROOT>\FPGA\sim\tb_reset_recovery.sv:217: $finish called at 6447151000 (1ps)

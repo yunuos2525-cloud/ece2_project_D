@@ -1,0 +1,3 @@
+VCD info: dumpfile project_evidence/fpga/W1/sim/tb_audio_path.vcd opened for output.
+PASS AUDIO_PATH: BYPASS bit-exact and W1 AUTO fallback
+<REPO_ROOT>\FPGA\sim\tb_audio_path.sv:48: $finish called at 281000 (1ps)

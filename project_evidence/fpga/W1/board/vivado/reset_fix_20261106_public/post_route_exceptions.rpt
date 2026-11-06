@@ -1,0 +1,21 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Fri Nov  6 21:07:05 2026
+| Host         : <REDACTED_HOST> running 64-bit major release  (build 9200)
+| Command      : report_exceptions -file <REPO_ROOT>/FPGA/build/w1/post_route_exceptions.rpt
+| Design       : w1_board_top
+| Device       : 7s75-fgga484
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Exceptions Report
+
+Position  From                                     Through         To                                                                       Setup           Hold            Status
+--------  ---------------------------------------  --------------  -----------------------------------------------------------------------  --------------  --------------  -----------------
+2         [get_ports rst_p]                        *               [get_cells -hier -regexp {.*u_reset_conditioner/sync_ff_reg\[[0-9]+\]}]  false           false
+3         [get_ports spi_sck]                      *               [get_cells -hier -regexp {.*u_spi/sck_sync_reg\[0\]}]                    false           false
+4         [get_ports spi_mosi]                     *               [get_cells -hier -regexp {.*u_spi/mosi_sync_reg\[0\]}]                   false           false
+5         [get_ports spi_cs_n]                     *               [get_cells -hier -regexp {.*u_spi/cs_sync_reg\[0\]}]                     false           false
+6         [get_ports {{adc_channel[*]} adc_dout}]  *               *                                                                        false           false

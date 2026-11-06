@@ -1,0 +1,3 @@
+VCD info: dumpfile project_evidence/fpga/W1/sim/tb_timekeeper_basic.vcd opened for output.
+PASS TIMEKEEPER_BASIC: RTC rollover and stopwatch start/stop/reset
+<REPO_ROOT>\FPGA\sim\tb_timekeeper_basic.sv:35: $finish called at 2366000 (1ps)

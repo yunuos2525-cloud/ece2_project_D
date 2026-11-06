@@ -1,5 +1,14 @@
 # Generated FPGA/MCU build outputs (do not ignore project_evidence/)
 FPGA/build/
+FPGA/*.xpr
+FPGA/*.cache/
+FPGA/*.runs/
+FPGA/*.gen/
+FPGA/*.hw/
+FPGA/*.ip_user_files/
+FPGA/.Xil/
+.Xil/
+clockInfo.txt
 STM32/build/
 STM32/Debug/
 STM32/Release/
@@ -15,5 +24,21 @@ STM32/Release/
 *.hex
 *.jou
 *.pb
+*.str
+*.wdb
+*.xpe
 .DS_Store
 Thumbs.db
+
+# Local/raw FPGA evidence. Curated, path-sanitized GitHub evidence is kept in
+# sim/github_w1 and board/vivado/*_public; the latest VCD set is explicitly staged.
+project_evidence/fpga/W1/sim/*.log
+project_evidence/fpga/W1/sim/*.csv
+project_evidence/fpga/W1/sim/*.vcd
+project_evidence/fpga/W1/sim/reset_fix_20261106/*.log
+project_evidence/fpga/W1/sim/reset_fix_20261106/*.csv
+project_evidence/fpga/W1/board/vivado/*.rpt
+project_evidence/fpga/W1/board/vivado/reset_fix_20261106/*.rpt
+project_evidence/fpga/W1/review/*.rpt
+project_evidence/fpga/W1/review/timing_review_vivado.log
+project_evidence/fpga/W1/reset_fix/pre/

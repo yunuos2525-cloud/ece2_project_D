@@ -1,0 +1,17 @@
+RTL-exact integer diagnostic; no RTL or original test artifact modified
+Quantized-coefficient linear H(500Hz): magnitude=0.980344858 gain=-0.172422dB
+CASE pure500_A40: nominal A500=40.0 A1000=0.0
+  ranges input=[-40,40] output=[-42,33] output_saturation_count=0 max_abs_acc=681476
+  transient_0_511: in500=39.798794 out500=36.117589 gain500=-0.843023dB in1000=0.000000 out1000=0.217748 gain1000=-infdB
+  official_512_4095: in500=39.798794 out500=36.040817 gain500=-0.861506dB in1000=0.000000 out1000=0.000000 gain1000=-infdB
+  late_2048_4095: in500=39.798794 out500=36.040817 gain500=-0.861506dB in1000=0.000000 out1000=0.000000 gain1000=-infdB
+CASE pure500_A35: nominal A500=35.0 A1000=0.0
+  ranges input=[-35,35] output=[-37,30] output_saturation_count=0 max_abs_acc=599556
+  transient_0_511: in500=34.774371 out500=33.430379 gain500=-0.342360dB in1000=0.000000 out1000=0.186451 gain1000=-infdB
+  official_512_4095: in500=34.774371 out500=33.473357 gain500=-0.331200dB in1000=0.000000 out1000=0.000000 gain1000=-infdB
+  late_2048_4095: in500=34.774371 out500=33.473357 gain500=-0.331200dB in1000=0.000000 out1000=0.000000 gain1000=-infdB
+CASE mixed_A35_A35: nominal A500=35.0 A1000=35.0
+  ranges input=[-61,61] output=[-47,48] output_saturation_count=0 max_abs_acc=793050
+  transient_0_511: in500=35.105350 out500=34.213301 gain500=-0.223567dB in1000=34.892729 out1000=2.997681 gain1000=-21.318991dB
+  official_512_4095: in500=35.105350 out500=34.266899 gain500=-0.209970dB in1000=34.892729 out1000=1.509702 gain1000=-27.276873dB
+  late_2048_4095: in500=35.105350 out500=34.266899 gain500=-0.209970dB in1000=34.892729 out1000=1.509702 gain1000=-27.276873dB

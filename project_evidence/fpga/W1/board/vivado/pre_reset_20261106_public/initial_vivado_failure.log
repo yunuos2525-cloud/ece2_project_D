@@ -1,0 +1,7 @@
+vivado.bat : ERROR: Vivado Design Suite cannot be launched because a valid license was not found. Visit the Vivado Lice
+nsing page to choose and generate the right license.
+At <REPO_ROOT>\FPGA\tools\run_vivado.ps1:5 char:1
++ & vivado.bat -mode batch -nolog -nojournal -source $tcl 2>&1 | Tee-Ob ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ERROR: Vivado D... right license.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
