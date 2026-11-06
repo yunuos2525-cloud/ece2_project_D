@@ -1,0 +1,19 @@
+# Generated FPGA/MCU build outputs (do not ignore project_evidence/)
+FPGA/build/
+STM32/build/
+STM32/Debug/
+STM32/Release/
+**/__pycache__/
+*.pyc
+*.vvp
+*.elf
+*.map
+*.o
+*.obj
+*.d
+*.bin
+*.hex
+*.jou
+*.pb
+.DS_Store
+Thumbs.db
