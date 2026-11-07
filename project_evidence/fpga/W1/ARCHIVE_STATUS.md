@@ -24,5 +24,8 @@
 - `NOT_VERIFIED`: `CFGBVS`, `CONFIG_VOLTAGE`, ADC/DAC reference and safe analog
   ranges for the exact board revision.
 
-No screenshot is claimed as captured. The required user captures remain
-unchecked in `sim/VAPORVIEW_REQUIRED_CAPTURES.md`.
+Six user-saved VaporView simulation PNGs are archived. Three requested files
+remain missing: A40 500 Hz Notch, SPI abort/retry, and reset during SPI. The
+mixed-Notch image also omits `dut.acc`; this limitation is recorded rather
+than inferred away. See `sim/VAPORVIEW_REQUIRED_CAPTURES.md`. These images do
+not change any BOARD or physical SPI item from `NOT_VERIFIED`.
