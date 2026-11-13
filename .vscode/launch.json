@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "G474RE — ST-LINK Debug",
+            "type": "stlinkgdbtarget",
+            "request": "launch",
+            "cwd": "${env:USERPROFILE}/stm32_build_test/ece2_project_D/g474-debug",
+            "preLaunchTask": "CMake: Build G474RE Debug",
+            "gdb": "${command:st-stm32-ide-debug-launch.get-gdb-executable}",
+            "environment": {
+                "TZ": "UTC0"
+            },
+            "deviceName": "STM32G474RE",
+            "deviceCore": "Cortex-M4",
+            "serverExe": "ST-LINK_gdbserver.exe",
+            "serverCwd": "${env:LOCALAPPDATA}/stm32cube/bundles/stlink-gdbserver/7.14.0+st.2/bin",
+            "serverCubeProgPath": "${env:LOCALAPPDATA}/stm32cube/bundles/programmer/2.23.0/bin",
+            "serverInterface": "SWD",
+            "serverVerify": true,
+            "runEntry": "main",
+            "imagesAndSymbols": [
+                {
+                    "imageFileName": "${env:USERPROFILE}/stm32_build_test/ece2_project_D/g474-debug/ece2_project_d_g474re.elf"
+                }
+            ]
+        }
+    ]
+}

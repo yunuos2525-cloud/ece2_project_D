@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMake: Build G474RE Debug",
+            "type": "cmake",
+            "command": "build",
+            "preset": "g474-debug",
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

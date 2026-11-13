@@ -1,0 +1,4 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/STM32",
+    "cmake.useCMakePresets": "always"
+}

@@ -1,0 +1,43 @@
+{
+    "version": 6,
+    "configurePresets": [
+        {
+            "name": "g474-debug",
+            "displayName": "G474RE Debug (ASCII build path)",
+            "generator": "Ninja",
+            "binaryDir": "$env{USERPROFILE}/stm32_build_test/ece2_project_D/g474-debug",
+            "toolchainFile": "${sourceDir}/cmake/arm-gcc.cmake",
+            "cacheVariables": {
+                "STM32_BOARD": "NUCLEO_G474RE",
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_C_FLAGS_DEBUG": "-Og -g3"
+            }
+        },
+        {
+            "name": "pc-test",
+            "displayName": "PC Test (ASCII build path)",
+            "binaryDir": "$env{USERPROFILE}/stm32_build_test/ece2_project_D/pc-test"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "g474-debug",
+            "displayName": "Build G474RE Debug",
+            "configurePreset": "g474-debug"
+        },
+        {
+            "name": "pc-test",
+            "displayName": "Build PC Test",
+            "configurePreset": "pc-test",
+            "configuration": "Release"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "pc-test",
+            "configurePreset": "pc-test",
+            "configuration": "Release",
+            "output": { "outputOnFailure": true }
+        }
+    ]
+}
