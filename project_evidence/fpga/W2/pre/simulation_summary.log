@@ -1,0 +1,7 @@
+﻿PASS audio_path_w2
+PASS iir_notch_variable
+PASS spi_w2
+PASS stopwatch
+PASS calendar_clock
+PASS lcd_status_display
+PASS w2_integration

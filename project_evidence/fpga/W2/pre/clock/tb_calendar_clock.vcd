@@ -1,0 +1,374 @@
+$date
+	Sat Nov 14 20:22:21 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_calendar_clock $end
+$var wire 14 ! year [13:0] $end
+$var wire 3 " weekday [2:0] $end
+$var wire 6 # second [5:0] $end
+$var wire 4 $ month [3:0] $end
+$var wire 6 % minute [5:0] $end
+$var wire 5 & hour [4:0] $end
+$var wire 6 ' day [5:0] $end
+$var reg 1 ( clk $end
+$var reg 1 ) rst $end
+$scope module dut $end
+$var wire 1 ( clk $end
+$var wire 1 ) rst $end
+$var parameter 32 * CLOCK_HZ $end
+$var parameter 32 + INITIAL_DAY $end
+$var parameter 32 , INITIAL_HOUR $end
+$var parameter 32 - INITIAL_MINUTE $end
+$var parameter 32 . INITIAL_MONTH $end
+$var parameter 32 / INITIAL_SECOND $end
+$var parameter 32 0 INITIAL_WEEKDAY $end
+$var parameter 32 1 INITIAL_YEAR $end
+$var parameter 32 2 SEC_W $end
+$var reg 6 3 day [5:0] $end
+$var reg 5 4 hour [4:0] $end
+$var reg 6 5 minute [5:0] $end
+$var reg 4 6 month [3:0] $end
+$var reg 2 7 sec_count [1:0] $end
+$var reg 6 8 second [5:0] $end
+$var reg 3 9 weekday [2:0] $end
+$var reg 14 : year [13:0] $end
+$scope function days_in_month $end
+$upscope $end
+$scope function is_leap $end
+$upscope $end
+$upscope $end
+$scope task check_next $end
+$upscope $end
+$scope task set_boundary $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 2
+b11111101010 1
+b100 0
+b0 /
+b1 .
+b0 -
+b0 ,
+b1 +
+b100 *
+$end
+#0
+$dumpvars
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+1)
+0(
+bx '
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
+$end
+#5000
+b0 #
+b0 8
+b0 %
+b0 5
+b0 &
+b0 4
+b100 "
+b100 9
+b1 '
+b1 3
+b1 $
+b1 6
+b11111101010 !
+b11111101010 :
+b0 7
+1(
+#10000
+0(
+#15000
+1(
+#20000
+0(
+#25000
+b1 7
+0)
+1(
+#30000
+0(
+#35000
+b10 7
+1(
+#40000
+0(
+#45000
+b11 7
+1(
+#50000
+0(
+#55000
+b1 #
+b1 8
+b0 7
+1(
+#60000
+0(
+#65000
+b1 7
+1(
+#66000
+b11 7
+b111011 #
+b111011 8
+b111011 %
+b111011 5
+b10111 &
+b10111 4
+b11110 '
+b11110 3
+b100 $
+b100 6
+#70000
+0(
+#75000
+b101 $
+b101 6
+b1 '
+b1 3
+b101 "
+b101 9
+b0 &
+b0 4
+b0 %
+b0 5
+b0 #
+b0 8
+b0 7
+1(
+#76000
+b11 7
+b111011 #
+b111011 8
+b111011 %
+b111011 5
+b10111 &
+b10111 4
+b110 "
+b110 9
+b11111 '
+b11111 3
+b1 $
+b1 6
+#80000
+0(
+#85000
+b10 $
+b10 6
+b1 '
+b1 3
+b0 "
+b0 9
+b0 &
+b0 4
+b0 %
+b0 5
+b0 #
+b0 8
+b0 7
+1(
+#86000
+b11 7
+b111011 #
+b111011 8
+b111011 %
+b111011 5
+b10111 &
+b10111 4
+b10 "
+b10 9
+b11100 '
+b11100 3
+b11111100111 !
+b11111100111 :
+#90000
+0(
+#95000
+b11 $
+b11 6
+b1 '
+b1 3
+b11 "
+b11 9
+b0 &
+b0 4
+b0 %
+b0 5
+b0 #
+b0 8
+b0 7
+1(
+#96000
+b11 7
+b111011 #
+b111011 8
+b111011 %
+b111011 5
+b10111 &
+b10111 4
+b11100 '
+b11100 3
+b10 $
+b10 6
+b11111101000 !
+b11111101000 :
+#100000
+0(
+#105000
+b11101 '
+b11101 3
+b100 "
+b100 9
+b0 &
+b0 4
+b0 %
+b0 5
+b0 #
+b0 8
+b0 7
+1(
+#106000
+b11 7
+b111011 #
+b111011 8
+b111011 %
+b111011 5
+b10111 &
+b10111 4
+#110000
+0(
+#115000
+b11 $
+b11 6
+b1 '
+b1 3
+b101 "
+b101 9
+b0 &
+b0 4
+b0 %
+b0 5
+b0 #
+b0 8
+b0 7
+1(
+#116000
+b11 7
+b111011 #
+b111011 8
+b111011 %
+b111011 5
+b10111 &
+b10111 4
+b100 "
+b100 9
+b11111 '
+b11111 3
+b1100 $
+b1100 6
+b100000110011 !
+b100000110011 :
+#120000
+0(
+#125000
+b100000110100 !
+b100000110100 :
+b1 $
+b1 6
+b1 '
+b1 3
+b101 "
+b101 9
+b0 &
+b0 4
+b0 %
+b0 5
+b0 #
+b0 8
+b0 7
+1(
+#126000
+b11 7
+b111011 #
+b111011 8
+b111011 %
+b111011 5
+b10111 &
+b10111 4
+b0 "
+b0 9
+b11100 '
+b11100 3
+b10 $
+b10 6
+#130000
+0(
+#135000
+b11 $
+b11 6
+b1 '
+b1 3
+b1 "
+b1 9
+b0 &
+b0 4
+b0 %
+b0 5
+b0 #
+b0 8
+b0 7
+1(
+#136000
+b11 7
+b111011 #
+b111011 8
+b111011 %
+b111011 5
+b10111 &
+b10111 4
+b0 "
+b0 9
+b11100 '
+b11100 3
+b10 $
+b10 6
+b100101100000 !
+b100101100000 :
+#140000
+0(
+#145000
+b11101 '
+b11101 3
+b1 "
+b1 9
+b0 &
+b0 4
+b0 %
+b0 5
+b0 #
+b0 8
+b0 7
+1(
+#146000

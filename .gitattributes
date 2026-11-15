@@ -5,3 +5,9 @@
 *.c text eol=lf
 *.h text eol=lf
 *.xdc text eol=lf
+
+# Vivado reports use aligned trailing spaces, and PRE evidence is preserved
+# verbatim. Do not treat that formatting or retained EOF blanks as patch errors.
+project_evidence/fpga/W2/pre/*.md -whitespace
+project_evidence/fpga/W2/pre/vivado/*.md -whitespace
+project_evidence/fpga/W2/pre/vivado/*.rpt -whitespace

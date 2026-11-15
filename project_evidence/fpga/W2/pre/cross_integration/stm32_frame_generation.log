@@ -1,0 +1,33 @@
+SOURCE=unmodified STM32/src/fpga_link.c executed on PC with virtual SPI callbacks
+NOTE=This is host execution, not bytes captured from a physical STM32 board.
+CS LOW
+TRANSFER 1 offset=0 length=1 TX=02
+CS HIGH
+FRAME FIXED       offset=0 length=1 result=0 TX=02
+CS LOW
+TRANSFER 2 offset=1 length=1 TX=01
+CS HIGH
+FRAME BYPASS      offset=1 length=1 result=0 TX=01
+CS LOW
+TRANSFER 3 offset=2 length=1 TX=06
+CS HIGH
+FRAME AUTO        offset=2 length=1 result=0 TX=06
+CS LOW
+TRANSFER 4 offset=3 length=4 TX=21 00 00 00
+CS HIGH
+FRAME READ_STATE  offset=3 length=4 result=0 TX=21 00 00 00
+READ_STATE decoded mode=02 seq=FF coeff_valid=0 loss=0
+CS LOW
+TRANSFER 5 offset=7 length=2 TX=10 00
+TRANSFER 6 offset=9 length=515 TX=00 00 ... 00 (515 bytes)
+CS HIGH
+FRAME READ_BLOCK  offset=7 length=517 result=0 TX=10 00 ... 00 (517 bytes)
+READ_BLOCK decoded id=0000 first=0D last=E8 loss=0
+COEFF source=audio_notch_coefficients hz=1000.0 radius=0.98 q2.14=16384,-30274,16384,-29668,15735
+CS LOW
+TRANSFER 7 offset=524 length=13 TX=20 01 00 40 BE 89 00 40 1C 8C 77 3D 62
+CS HIGH
+FRAME SET_COEFF   offset=524 length=13 result=0 TX=20 01 00 40 BE 89 00 40 1C 8C 77 3D 62
+FRAME_LAYOUT fixed=0 bypass=1 auto=2 read_state=3:6 read_block=7:523 set_coeff=524:536
+TOTAL_CAPTURED_BYTES=537
+PASS STM32_FRAME_GENERATION
